@@ -31,7 +31,7 @@ var aHeadFullOfDreamsAlbum = new Album("A head full of dreams",["A head full of 
 	);
 
 //event handling
-document.addEventListener("DOMContentLoader",function(event){
+document.addEventListener("DOMContentLoaded",function(event){
 		function printAlbumList(event){
 			//create a list
 			//bind it to the main content classfor display
