@@ -17,7 +17,7 @@ var coldPlayAlbumList = new Array();
 coldPlayAlbumList[0] = aHeadFullOfDreamsAlbum;
 
 var taylorSwift = new Artist("Tayolr Swift",taylorSwiftAlbumList,false);
-var arianaGrande = new Artist("Ariana Grande",arianaGrandeAlbumList,false);
+var arianaGrande = new Artist("Ariana Grande",arianaGrandeAlbumList,true);
 var coldPlay = new Artist("ColdPlay",coldPlayAlbumList,true);
 
 function printAlbums(artistName){

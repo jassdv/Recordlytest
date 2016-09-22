@@ -1,7 +1,10 @@
 function printSongList(artist){
-	var songList = 0;
+	var songList;
 	for(var i=0;i<artist.albumList.length;i++){
-		songList+=printAlbumList(artist.albumList[i].name);
+		if(i==0)
+			songList=printAlbumList(artist.albumList[i].name);
+		else
+			songList+=printAlbumList(artist.albumList[i].name);
 
 	}
 	return songList;
@@ -11,10 +14,9 @@ function printSongList(artist){
 document.addEventListener("DOMContentLoaded",
 	function(event){
 		var songList = printSongList(taylorSwift);
-		//document.getElementById("song-content").innerHTML=songList;
 		songList += printSongList(arianaGrande);
-		//document.getElementById("song-content").innerHTML=songList;
 		songList += printSongList(coldPlay);
 		document.getElementById("song-content").innerHTML=songList;
+		
 	}
 );

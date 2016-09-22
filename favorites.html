@@ -2,6 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/Artistscript.js"></script>
+    <script src="javascripts/favoriteScript.js"></script>
     <title>Favorites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
@@ -12,13 +15,17 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Recordly - Favorites</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="albums.html" class="btn">Albums</a>
-      <a href="artists.html" class="btn">Artists</a>
-      <a href="songs.html" class="btn">Songs</a>
     </section>
 
     <section class="main-content">
+    <p>
+        <button id="albums">Albums</button>
+        <button id="artists">Artists</button>
+        <button id="songs">Songs</button>
+    </p>
+    <h2>Favorites List</h2>
+    <div id="favorites-content"></div>
+
      <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/jassdv/Recordly">Recordly</a> is maintained by <a href="https://github.com/jassdv">jassdv</a>.</span>
 
